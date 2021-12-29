@@ -1,4 +1,4 @@
-Tecnologies Used:
+Technologies Used:
 
 https://wireframe.cc/
 github.com
@@ -9,6 +9,7 @@ Dev Tools
 HTML
 CSS
 Javascript
+Netlify.com
 
 Links: wireframe and user stories
 
@@ -20,7 +21,17 @@ Prepare for Stand Ups:
 created a new repo in git hub
 forked and cloned code from new repo in git hub to Projects Directory
 created new files index.html, styles.css, script.js, and README.md inside of Projects Directory
-review my past notes and documentation from lessons 
+review my past notes and documentation from lessons
+
+completed logic for playing the game
+render a game board in the browser
+switch turns between X and O
+include separate HTML / CSS / Javascript files
+stick with KISS (Keep it Simple Stupid) and DRY (Don't Repeat Yourself)
+use JavaScript for DOM manipulation
+deploy your game online 
+use semantic markup for HTML and CSS
+have well-format and well-commented code
 
 2. What will you do today?
 
@@ -42,8 +53,12 @@ if stuck: 1) google; 2) post ? on slack or ask another student; 3) create an iss
 
 4. How close to MVP (Minimum Viable Product)?
 
+   80% complete
+
 5. Unsolved Problems which would be fixed in future iterations:
 
     Show a draw if neither player wins
+
+    Display which side won or show a draw if neither player wins
 
 
