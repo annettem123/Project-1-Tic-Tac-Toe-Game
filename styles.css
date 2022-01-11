@@ -1,12 +1,20 @@
 h1 {
     text-align: center;
+    color: white
+
 }
+ body { 
+ background-image: url("https://i.imgur.com/Ye05LYN.jpeg"); 
+ } 
+
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    background-color: #2196F3;
+    background-color: #216bf3;
     padding: 10px;
+    margin: 0 auto;
+    max-width: 500px;
   }
   
   .grid-container > div {
