@@ -19,17 +19,21 @@ function handleClickEvent (event){ //Defines function handleClickEvent. This hol
     console.log(event.target); //Parameter "event.target" is used to get the element that we are clicking into. When one clicks on a square, the element will print. One sees the individual element, i.e., id="8" or id="0", etc.  Now we can actually grab the element to add something to it or show something into it.
   if(playerOneTurn) {          //Having variable name in () and not having anything to compare it to is okay because it is a Boolean, and therefore, it is automatically checking to see if it is true (implicitly, it automatically checks to see if it is true. It is ok if one does put if playerOneTurn = true, but not necessary).
     //   event.target.innerText = ""
-      event.target.innerText===''//playerOneTurn may only click on squares that are empty.
-      event.target.innerText="X" //What is happening: you click on a square,
-      gameBoard[event.target.id] = "X" //and it is asking, "Is it playerOneTurn"? If it is, we are going to put an "X" in that square that playerOneTurn clicked on.
-      playerOneTurn=!playerOneTurn //Here, is where we change the turn from playerOneTurn to be player two's Turn by making boolean false by using =! 
+      if(event.target.innerText===''){
+        event.target.innerText="X" //What is happening: you click on a square,
+        gameBoard[event.target.id] = "X" //and it is asking, "Is it playerOneTurn"? If it is, we are going to put an "X" in that square that playerOneTurn clicked on.
+        playerOneTurn=!playerOneTurn //Here, is where we change the turn from playerOneTurn to be player two's Turn by making boolean false by using =! 
+      }
+      //playerOneTurn may only click on squares that are empty.
+     
       
     }
-    else{
-        event.target.innerText===''//Player Two may only click on a square that is blank.
+    else {
+        if(event.target.innerText===''){//Player Two may only click on a square that is blank.
         event.target.innerText="O"//When the turn changes from playerOneTurn to player Two's turn, 
         gameBoard[event.target.id] = "O"//and it knows that since it is not playerOneTurn", it therefore must be player Two's Turn and once player Two clicks on a square, it will put an "O" into that square.
-        playerOneTurn=!playerOneTurn //Then, it will evaluate whether playerOneTurn or opponent wins by going through the function checkWinner below.
+        playerOneTurn=!playerOneTurn
+        } //Then, it will evaluate whether playerOneTurn or opponent wins by going through the function checkWinner below.
     }
     counter++
    checkWinner();

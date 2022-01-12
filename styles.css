@@ -6,7 +6,7 @@ h1 {
  body { 
  background-image: url("https://i.imgur.com/Ye05LYN.jpeg"); 
  } 
-
+ 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
