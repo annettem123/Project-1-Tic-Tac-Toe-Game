@@ -26,6 +26,14 @@ h1 {
 .center {
     margin: auto;
     width: 60%;
-    border: 3px solid #73AD21;
+    border: 3px solid #21ad4d;
     padding: 10px;
   }
+.button {
+    margin: auto;
+    width: 10%; 
+    border: 2px;
+    padding: 50px;
+  
+    
+}  
